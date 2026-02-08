@@ -1,67 +1,42 @@
 # React Jest Testing Demo
 
-A practical DevOps testing assignment demonstrating React component testing using Jest and React Testing Library.
+A practical DevOps testing assignment demonstrating React component testing using Jest, React Testing Library, and bun.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Install Dependencies
 
 ```bash
-npm install
+bun install
 ```
 
 ### Run the Application
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 ### Run Tests
 
 ```bash
-npm test
+bun run test
+# Or for CI/CD:
+bun run test --watchAll=false
 ```
 
 ### Run Tests in Watch Mode
 
 ```bash
-npm run test:watch
+bun run test --watch
 ```
 
 ### Generate Coverage Report
 
 ```bash
-npm run test:coverage
+bun run test:coverage
 ```
 
-## 📊 Test Results
-
-✅ **8 tests passing** with **100% code coverage**
-
-```
-Test Suites: 2 passed, 2 total
-Tests:       8 passed, 8 total
-
-Coverage:
-File         | % Stmts | % Branch | % Funcs | % Lines
--------------|---------|----------|---------|--------
-All files    |     100 |      100 |     100 |     100
- App.jsx     |     100 |      100 |     100 |     100
- Counter.jsx |     100 |      100 |     100 |     100
-```
-
-## 📁 Project Structure
-
-```
-src/
-├── App.jsx              # Main app component
-├── App.test.jsx         # App component tests
-├── Counter.jsx          # Counter component
-├── Counter.test.jsx     # Counter component tests
-└── main.jsx            # Entry point
-```
-
-## 🧪 What's Being Tested
+## What's Being Tested
 
 ### Counter Component Tests
 
@@ -77,38 +52,18 @@ src/
 - ✅ Renders Counter component
 - ✅ Renders Increase and Decrease buttons
 
-## 📘 Full Assignment Documentation
-
-See [TESTING_ASSIGNMENT.md](./TESTING_ASSIGNMENT.md) for complete documentation including:
-
-- Tools explanation
-- Implementation steps
-- DevOps integration
-- Key concepts
-- Best practices
-
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **React 19** - UI framework
 - **Vite** - Build tool
 - **Jest 30** - Test runner
 - **React Testing Library** - Component testing
 - **Babel** - JSX transpilation for tests
+- **bun** - Fast JavaScript runtime & package manager (optional)
 
-## 🎯 DevOps Integration
-
-These tests can be integrated into CI/CD pipelines:
-
-```yaml
-# Example GitHub Actions workflow
-- name: Run tests
-  run: npm test -- --watchAll=false
-- name: Check coverage
-  run: npm run test:coverage
-```
-
-## 📚 Learn More
+## Learn More
 
 - [Jest Documentation](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/react)
 - [Vite Documentation](https://vitejs.dev/)
+- [bun Documentation](https://bun.sh/docs)
