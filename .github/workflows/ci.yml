@@ -25,7 +25,6 @@ jobs:
 
       - name: Run tests
         run: bun run test --watchAll=false
-        # Or if you want to use the npm script: bun run test
 
       - name: Generate coverage report
         run: bun run test:coverage
